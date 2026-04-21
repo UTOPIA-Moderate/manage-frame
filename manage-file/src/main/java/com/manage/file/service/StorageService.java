@@ -2,6 +2,7 @@ package com.manage.file.service;
 
 import io.minio.*;
 import io.minio.http.Method;
+import com.manage.file.config.MinIOProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
