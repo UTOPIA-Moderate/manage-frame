@@ -12,7 +12,7 @@ import com.manage.common.mapper.SysRoleMenuMapper;
 import com.manage.common.result.ResultCode;
 import com.manage.common.util.SecurityUtils;
 import com.manage.system.dto.SysRoleDTO;
-import com.manage.system.mapper.SysRoleMapper;
+import com.manage.common.mapper.SysRoleMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

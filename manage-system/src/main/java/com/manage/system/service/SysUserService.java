@@ -16,7 +16,7 @@ import com.manage.common.result.ResultCode;
 import com.manage.common.util.PasswordEncoder;
 import com.manage.common.util.SecurityUtils;
 import com.manage.system.dto.SysUserDTO;
-import com.manage.system.mapper.SysUserMapper;
+import com.manage.common.mapper.SysUserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

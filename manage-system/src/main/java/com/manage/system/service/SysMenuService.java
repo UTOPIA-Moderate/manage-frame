@@ -10,7 +10,7 @@ import com.manage.common.exception.BaseException;
 import com.manage.common.result.ResultCode;
 import com.manage.common.util.SecurityUtils;
 import com.manage.system.dto.SysMenuDTO;
-import com.manage.system.mapper.SysMenuMapper;
+import com.manage.common.mapper.SysMenuMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
