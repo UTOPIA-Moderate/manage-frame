@@ -59,6 +59,12 @@
             <artifactId>minio</artifactId>
             <version>8.5.7</version>
         </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
