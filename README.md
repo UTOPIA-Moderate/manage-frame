@@ -8,12 +8,13 @@
 
 ```
 manage-frame/
+├── manage-web/          # 前端 (React + Ant Design)
 ├── manage-common/       # 公共模块（实体/工具/异常/枚举）
-├── manage-gateway/       # API 网关 (8080)
-├── manage-auth/          # 认证服务 (8081)
-├── manage-system/        # 系统服务 (8082)
-├── manage-job/          # 定时任务服务 (8083)
-├── manage-file/         # 文件服务 (8084)
+├── manage-gateway/      # API 网关 (8080)
+├── manage-auth/         # 认证服务 (8081)
+├── manage-system/       # 系统服务 (8082)
+├── manage-job/         # 定时任务服务 (8083)
+├── manage-file/        # 文件服务 (8084)
 └── docs/
     ├── sql/schema.sql   # 数据库初始化脚本
     ├── 需求文档.md
@@ -21,6 +22,18 @@ manage-frame/
 ```
 
 ## 技术栈
+
+### 前端 (manage-web)
+
+| 技术 | 版本 |
+|------|------|
+| React | 18.x |
+| Ant Design | 5.x |
+| TypeScript | 5.x |
+| Umi | 4.x |
+| pnpm | - |
+
+### 后端
 
 | 技术 | 版本 |
 |------|------|
@@ -75,13 +88,20 @@ psql -U postgres -f docs/sql/schema.sql
 - `manage-job-xxljob.yml` - XXL-Job 配置
 - `manage-file-storage.yml` - 文件存储配置
 
-### 4. 编译
+### 4. 前端安装
+
+```bash
+cd manage-web
+pnpm install
+```
+
+### 5. 编译后端
 
 ```bash
 mvn clean install -DskipTests
 ```
 
-### 5. 启动服务
+### 6. 启动服务
 
 ```bash
 # 启动网关
@@ -100,7 +120,16 @@ java -jar manage-job/target/manage-job-1.0.0.jar
 java -jar manage-file/target/manage-file-1.0.0.jar
 ```
 
-### 6. Docker Compose（可选）
+### 7. 启动前端
+
+```bash
+cd manage-web
+pnpm dev
+```
+
+前端访问：http://localhost:8888
+
+### 8. Docker Compose（可选）
 
 ```yaml
 version: '3.8'
