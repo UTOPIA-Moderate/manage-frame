@@ -1,6 +1,8 @@
 # manage-frame
 
-企业级中后台管理框架（Spring Cloud 微服务版）
+> 基于 React + Spring Cloud 的企业级中后台管理框架
+
+本项目前端参考 [react-admin](https://github.com/baiwumm/react-admin)，后端使用 Spring Cloud 微服务架构重新构建。
 
 ## 项目结构
 
@@ -156,3 +158,22 @@ services:
 
 - 用户名: `admin`
 - 密码: `admin123`（需在 Nacos 中配置 JWT 密钥后生效）
+
+## 参考项目
+
+本项目前端页面和交互参考自以下开源项目：
+
+| 项目 | 说明 |
+|------|------|
+| [react-admin](https://github.com/baiwumm/react-admin) | React + Nest.js 企业级中后台管理系统，前端页面和交互逻辑为本项目的主要参考 |
+
+### 参考项目特性
+
+- React 18 + Ant Design 5.x + TypeScript
+- Umi 4 动态路由
+- 国际化（i18n）
+- 操作日志审计
+- RBAC 权限管理
+- SSE 实时消息推送
+
+本项目后端使用 Spring Cloud 微服务架构重写，数据库迁移至 PostgreSQL，配置统一管理于 Nacos。
