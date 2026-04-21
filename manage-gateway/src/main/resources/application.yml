@@ -1,6 +1,7 @@
 spring:
   config:
-    import: nacos:${spring.application.name}
+    import:
+  - optional:nacos:${spring.application.name}.${spring.cloud.nacos.config.file-extension}
   application:
     name: manage-gateway
   cloud:
