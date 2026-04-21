@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: nacos:
   application:
     name: manage-auth
   cloud:
