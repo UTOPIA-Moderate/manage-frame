@@ -11,6 +11,7 @@ import com.manage.common.mapper.SysMenuMapper;
 import com.manage.common.mapper.SysRoleMapper;
 import com.manage.common.mapper.SysUserMapper;
 import com.manage.common.result.ResultCode;
+import com.manage.auth.dto.UserInfoResponse;
 import com.manage.common.util.PasswordEncoder;
 import com.manage.common.util.SecurityUtils;
 import lombok.RequiredArgsConstructor;
