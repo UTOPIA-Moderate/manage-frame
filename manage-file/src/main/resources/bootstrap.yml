@@ -1,6 +1,6 @@
 spring:
   config:
-    import: nacos:
+    import: nacos:${spring.application.name}
   application:
     name: manage-file
   cloud:
