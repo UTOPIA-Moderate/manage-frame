@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.manage.common.entity.SysJobLog;
-import com.manage.job.mapper.SysJobLogMapper;
+import com.manage.common.mapper.SysJobLogMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
