@@ -1,7 +1,7 @@
 spring:
   config:
     import:
-  - optional:nacos:${spring.application.name}.${spring.cloud.nacos.config.file-extension}
+      - optional:nacos:${spring.application.name}.${spring.cloud.nacos.config.file-extension}
   application:
     name: manage-job
   cloud:
